@@ -1,7 +1,26 @@
-html, body {
-    width: 100%;
-}
-table {
-    margin: 0 auto;
+
+.frame {
+    border: 3px solid black;
+    border-radius: 4px;
+    height: 342px;
+    width: 310px;
+    margin: 50px auto;
 }
 
+.display{
+    height: 108px;
+}
+
+.nums {
+    font-size: 75px;
+    float: right;
+    padding: 15px 10px 0 0;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.title {
+    margin: 0 auto;
+}

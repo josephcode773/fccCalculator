@@ -13,63 +13,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.10.1/math.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" />
 </head>
 
 <body>
-<div>
-    <div>
-        <FORM NAME="Calc">
-            <table align="center">
-                <TR>
-                    <TD>
-                        <input type="text" name="Display" size="16">
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <input type="button" name="nine" value=" 9 " onclick="Calc.Display.value += '9'">
-                        <input type="button" name="eight" value=" 8 " onclick="Calc.Display.value += '8'">
-                        <input type="button" name="seven" value=" 7 " onclick="Calc.Display.value += '7'">
-                        <input type="button" name="plus" value=" + " onclick="Calc.Display.value += '+'">
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <input type="button" name="six" value=" 6 " onclick="Calc.Display.value += '6'">
-                        <input type="button" name="five" value=" 5 " onclick="Calc.Display.value += '5'">
-                        <input type="button" name="four" value=" 4 " onclick="Calc.Display.value += '4'">
-                        <input type="button" name="minus" value=" - " onclick="Calc.Display.value += '-'">
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <input type="button" name="three" value=" 3 " onclick="Calc.Display.value += '3'">
-                        <input type="button" name="two" value=" 2 " onclick="Calc.Display.value += '2'">
-                        <input type="button" name="one" value=" 1 " onclick="Calc.Display.value += '1'">
-                        <input type="button" name="multiply" value=" * " onclick="Calc.Display.value += '*'">
-                    </TD>
-                </TR>
-                <TR>
-                    <TD>
-                        <input type="button" name="clear" value=" C " onclick="Calc.Display.value = ''">
-                        <input type="button" name="zero" value=" 0 " onclick="Calc.Display.value += '0'">
-                        <input type="button" name="equal" value=" = " onclick="Calc.Display.value = eval(Calc.Display.value)">
-                        <input type="button" name="divide" value=" / " onclick="Calc.Display.value += '/'">
-                    </TD>
-                </TR>
+    <div class="center-block title">
+        <h3 class="center-align">2 Number Calculator</h3>
+    </div>
+    <div class="frame">
+        <FORM class="calcframe" NAME="Calc2">
+            <TR>
+                <TD>
+                    <input class="" type="text" name="Display2" size="16" placeholder="0">
+                </TD>
+            </TR>
 
-            </table>
+            <div class="row numpad">
+                <a class="waves-effect waves-light btn-large col s9 blue-grey lighten-1" onclick="Calc2.Display2.value = ''">AC</a>
+                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '/'">&div;</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '1'">1</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '2'">2</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '3'">3</a>
+                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '*'">&times;</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '4'">4</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '5'">5</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '6'">6</a>
+                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '-'">&minus;</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '7'">7</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '8'">8</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '9'">9</a>
+                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '+'">&plus;</a>
+                <a class="waves-effect waves-light btn-large col s6 blue-grey lighten-3" onclick="Calc2.Display2.value += '0'">0</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '.'">.</a>
+                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value = eval(Calc2.Display2.value)">&equals;</a>
+            </div>
         </FORM>
     </div>
-</div>
 
-
-<!--Scripts-->
-<script src="script.js"></script>
+    <!--Scripts-->
+    <script src="script.js"></script>
 </body>
 
 </html>
