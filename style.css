@@ -1,5 +1,4 @@
 
-
 .frame {
     border: 3px solid black;
     border-radius: 4px;
@@ -7,7 +6,6 @@
     width: 310px;
     margin: 50px auto;
 }
-
 
 .display{
     height: 108px;
