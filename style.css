@@ -1,22 +1,9 @@
-.center {
-    padding: 70px 0;
-    border: 3px solid green;
-    text-align: center;
-}
 
-.calcframe {
-    text-align: center;
-    border: 3px solid black;
-    border-radius: 4px;
-    height: 330px;
-    width: 155px;
-    margin: 50px auto;
-}
 
 .frame {
     border: 1px solid black;
     border-radius: 4px;
-    height: 400px;
+    height: 350px;
     width: 300px;
     margin: 50px auto;
 }
