@@ -1,7 +1,7 @@
 
 
 .frame {
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 4px;
     height: 350px;
     width: 300px;
@@ -17,4 +17,12 @@
     font-size: 75px;
     float: right;
     padding: 15px 10px 0 0;
+}
+
+.h3 {
+    text-align: center;
+}
+
+.title {
+    margin: 0 auto;
 }

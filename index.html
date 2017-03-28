@@ -17,19 +17,21 @@
 </head>
 
 <body>
-
+    <div class="center-block title">
+        <h3 class="center-align">2 Number Calculator</h3>
+    </div>
     <div class="frame">
         <FORM class="calcframe" NAME="Calc2">
             <TR>
                 <TD>
-                    <input class="display nums" type="text" name="Display2" size="16">
+                    <input class="display nums" type="text" name="Display2" size="16" placeholder="0">
                 </TD>
             </TR>
 
             <div class="row numpad">
                 <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-1" onclick="Calc2.Display2.value = ''">AC</a>
                 <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-1">+/-</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-1">%</a>
+                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-1" onclick="Calc2.Display2.value += '%'">%</a>
                 <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '/'">&div;</a>
                 <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '1'">1</a>
                 <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '2'">2</a>
