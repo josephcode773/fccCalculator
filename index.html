@@ -1,10 +1,3 @@
-<!--User Story 1: I can add, subtract, multiply and divide two numbers.-->
-
-<!--User Story 2: I can clear the input field with a clear button.-->
-
-<!--User Story 3: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output-->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,41 +10,46 @@
 </head>
 
 <body>
-    <div class="center-block title">
-        <h3 class="center-align">Free Code Camp Calculator</h3>
-    </div>
-    <div class="frame">
-        <FORM class="calcframe" NAME="Calc2">
-            <TR>
-                <TD>
-                    <input class="" type="text" name="Display2" size="16" placeholder="0">
-                </TD>
-            </TR>
+<div class="center-block title">
+    <h3 class="center-align">Simple Javascript Calculator</h3>
+</div>
+<div class="frame">
 
-            <div class="row numpad">
-                <a class="waves-effect waves-light btn-large col s9 blue-grey lighten-1" onclick="Calc2.Display2.value = ''">AC</a>
-                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '/'">&div;</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '1'">1</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '2'">2</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '3'">3</a>
-                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '*'">&times;</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '4'">4</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '5'">5</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '6'">6</a>
-                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '-'">&minus;</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '7'">7</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '8'">8</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '9'">9</a>
-                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value += '+'">&plus;</a>
-                <a class="waves-effect waves-light btn-large col s6 blue-grey lighten-3" onclick="Calc2.Display2.value += '0'">0</a>
-                <a class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="Calc2.Display2.value += '.'">.</a>
-                <a class="waves-effect waves-light btn-large col s3" onclick="Calc2.Display2.value = eval(Calc2.Display2.value)">&equals;</a>
-            </div>
-        </FORM>
+    <div class="row display">
+        <span class="numss">
+          <input class="" id="calcDisplay2" type="text" name="Display2" maxlength="16" size="16" placeholder="0">
+        </span>
     </div>
 
-    <!--Scripts-->
-    <script src="script.js"></script>
+
+
+    <div class="row numpad">
+        <button class="waves-effect waves-light btn-large col s9 blue-grey lighten-1" onclick="attachAllClear(event)">AC</button>
+        <button value="/" class="waves-effect waves-light btn-large col s3" onclick="attachNumber(event)">&div;</button>
+
+        <button value="1" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">1</button>
+        <button value="2" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">2</button>
+        <button value="3" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">3</button>
+        <button value="*" id="calcButton" class="waves-effect waves-light btn-large col s3" onclick="attachNumber(event)">&times;</button>
+
+        <button value="4" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">4</button>
+        <button value="5" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">5</button>
+        <button value="6" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">6</button>
+        <button value="-" id="calcButton" class="waves-effect waves-light btn-large col s3" onclick="attachNumber(event)">&minus;</button>
+
+        <button value="7" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">7</button>
+        <button value="8" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">8</button>
+        <button value="9" id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">9</button>
+        <button value="+" id="calcButton" class="waves-effect waves-light btn-large col s3" onclick="attachNumber(event)">&plus;</button>
+
+        <button value="0" id="calcButton" class="waves-effect waves-light btn-large col s6 blue-grey lighten-3" onclick="attachNumber(event)">0</button>
+        <button value="." id="calcButton" class="waves-effect waves-light btn-large col s3 blue-grey lighten-3" onclick="attachNumber(event)">.</button>
+        <button value="" id="calcButton" class="waves-effect waves-light btn-large col s3" onclick="attachEvaluate(event)">&equals;</button>
+    </div>
+</div>
+
+<!--Scripts-->
+<script src="script.js"></script>
 </body>
 
 </html>

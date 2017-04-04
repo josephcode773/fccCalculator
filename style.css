@@ -2,17 +2,17 @@
 .frame {
     border: 3px solid black;
     border-radius: 4px;
-    height: 342px;
+    height: 316px;
     width: 310px;
     margin: 50px auto;
 }
 
 .display{
-    height: 108px;
+    height: 20px;
 }
 
 .nums {
-    font-size: 75px;
+    font-size: 8px;
     float: right;
     padding: 15px 10px 0 0;
 }

@@ -1,10 +1,16 @@
-/*
- Created by lamars on 2/26/17.
+function attachNumber(event) {
+    var nummie = event.target.value;
+    document.getElementById("calcDisplay2").value += nummie;
+    event.preventDefault();
+}
 
- User Story 1: I can add, subtract, multiply and divide two numbers.
+function attachAllClear(event) {
+    document.getElementById("calcDisplay2").value = "";
+    event.preventDefault();
+}
 
- User Story 2: I can clear the input field with a clear button.
-
- User Story 3: I can keep chaining mathematical operations together until I hit the equal button, and the calculator will tell me the correct output
- */
+function attachEvaluate(event) {
+    document.getElementById("calcDisplay2").value = eval(document.getElementById("calcDisplay2").value);
+    event.preventDefault();
+}
 
